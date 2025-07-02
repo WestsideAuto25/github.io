@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Side Auto and Truck Repair Center</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #000; color: #ddd; }
+        header { background-color: #222; padding: 2em; text-align: center; color: #ccc; }
+        header img { max-height: 100px; display: block; margin: 0 auto 1em; }
+        header h1 { margin: 0; font-size: 2.5em; color: silver; }
+        header p { font-style: italic; }
+
+        nav { background-color: #111; padding: 1em; text-align: center; }
+        nav a { color: silver; margin: 0 1em; text-decoration: none; font-weight: bold; }
+
+        section { max-width: 1000px; margin: 2em auto; padding: 2em; background-color: #1a1a1a; border-radius: 10px; }
+        h2 { color: white; }
+
+        form input, form textarea, form button {
+            width: 100%; padding: 0.8em; margin: 0.5em 0; border: none; border-radius: 5px;
+        }
+        form input, form textarea {
+            background-color: #333; color: white;
+        }
+        form button {
+            background-color: silver; color: black; font-weight: bold; cursor: pointer;
+        }
+
+        footer { background-color: #111; color: silver; text-align: center; padding: 1em; margin-top: 3em; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="West Side Auto and Truck Logo">
+        <h1>West Side Auto and Truck Repair Center</h1>
+        <p>From Small Cars to Big Trucks — We Fix It All!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#schedule">Schedule</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Our Shop</h2>
+        <p>Located at 2309 Harmony Way in Evansville, Indiana, West Side Auto and Truck Repair Center is dedicated to providing reliable and efficient auto and truck repair services. We work on all vehicles — from small cars to diesel trucks — with honesty, experience, and pride.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services Performed</h2>
+        <ul style="line-height: 1.8;">
+	    <li>Diagnostics</li>            
+	    <li>Air Conditioning / Heating</li>
+	    <li>Oil Changes</li>
+	    <li>Battery</li>
+            <li>Brake Repair and Replacement</li>
+	    <li>Belts / Hoses / Filter</li>
+            <li>Engine Diagnostics</li>
+	    <li>Routine Services</li>
+            <li>Diesel Repair</li>
+            <li>Transmission Service</li>
+	    <li>Suspension</li>
+            <li>Fleet Maintenance</li>
+        </ul>
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule a Repair Service</h2>
+        <p>Fill out this form to request a repair. We'll respond as soon as possible.</p>
+        <form action="https://formspree.io/f/xzblyzld" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="_replyto" placeholder="Your Email" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <textarea name="message" placeholder="Describe the issue or service needed..." rows="5" required></textarea>
+            <button type="submit">Request Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 West Side Auto and Truck Repair Center | Evansville, IN</p>
+    </footer>
+</body>
+</html>
